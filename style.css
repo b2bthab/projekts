@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #da9ebc; /* fona krasa */
+  font-family: "Oswald", sans-serif;
+  }
+h1 {
+  color: #942192;
+  text-align: left; 
+  font-family: "Oswald", sans-serif;
+}
+p {
+  color: #ffffff;
+}
