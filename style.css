@@ -1,16 +1,141 @@
-html {
+html, body {
   height: 100%;
   width: 100%;
-}
-body {
-  background-color: #da9ebc; /* fona krasa */
+  margin: 0;
+  padding: 0;
+  background-color: #caf0fe; /* fona krasa */
   font-family: "Oswald", sans-serif;
-  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin-top: 0px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 100px;
+}
+.topnav a {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: #c4bc00;
+}
+.sidebar {
+  height: 100%;
+  width: 100px;
+  position: fixed; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3a88fe;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidebar a {
+padding: 10px; 
+text-decoration: none;
+font-size: 18px;
+color: #ffffff;
+display: block;
+}
+.sidebar a:hover {
+color: #f5ec00;
+background-color: darkgrey;
+}
+main {
+  margin-left: 100px;
+  padding: 20px;
+}
+footer {
+  background-color: #333;
+  margin-left: 100px;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+button {
+  background-color: #74a7fe;
+  color: #232323;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+}
+button:hover {
+  background-color: #0061ff;
+  color: black;
+}
 h1 {
   color: #942192;
   text-align: left; 
   font-family: "Oswald", sans-serif;
 }
 p {
-  color: #ffffff;
+  color: #53d5fd;
+  font-size: 20px;
+}
+#list {
+  background-color: #cce8b5;
+  padding: 20px
+  margin: 8px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+#tabula{
+  background-color: #cce8b5;
+  padding: 10px
+}
+#saturs p {
+  color: yellow;
+  font-size: 20px;
+}
+#image img {
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+#tabula table {
+  border-collapse: collapse;
+  background-color: #ddffff;
+  width: 90%;
+  margin: 20px;
+  border-color: #0061ff; 
+}
+#tabula td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+#tabula tr:nth-child(even)  {
+  background-color: #f2f2f2;
+}
+#tabula tr:nth-child(1)  {
+  background-color: #9aa60e;
 }
