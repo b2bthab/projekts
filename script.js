@@ -41,3 +41,11 @@ function teksts() {
   ctx.fillStyle = "purple";
   ctx.fillText("Sveiki, pasaule!", 190, 85); 
 }
+function aprekins() {
+let vards = document.getElementById("vards").value;
+let num1 = parseFloat(document.getElementById("a").value);
+let num2 = parseInt(document.getElementById("b").value);
+let sum = num1 * num2;
+console.log("Tevi sauc " + vards + "Atbilde ir: " + sum);
+document.getElementById("rezultats").innerHTML = "<br>Tevi sauc " + vards + "<br>Atbilde ir: " + sum;
+}
