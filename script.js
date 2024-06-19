@@ -49,3 +49,27 @@ let sum = num1 * num2;
 console.log("Tevi sauc " + vards + "Atbilde ir: " + sum);
 document.getElementById("rezultats").innerHTML = "<br>Tevi sauc " + vards + "<br>Atbilde ir: " + sum;
 }
+function atjaunotIetvaru(which) {
+document.getElementById("lapas_saturs").innerHTML = '<'+'object id="lapas" type="text/html" data="'+which.href+'"></'+'object>';
+}
+let age = 100;
+if (age < 18) {
+  console.log("Nepilngadīgs");
+} else if (age >= 18 && age < 65) {
+  console.log("Pilngadīgs");
+}
+else {
+  console.log("Cits gadijums")
+}
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+  if (i==5) {
+  console.log(i);
+}
+}
+let j = 0;
+while (j<=10) {
+  console.log(j);
+  j++;
+}
+let skaitlis = 
