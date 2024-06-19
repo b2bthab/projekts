@@ -1,6 +1,15 @@
 window.onload = function() {
   zimetuzcanva();
-}
+    var navLinks = document.querySelectorAll('.topnav a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.forEach(function(link) {
+          link.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+  }
 function zimetuzcanva() {
   var canvas = document.getElementById("zimejums");
   var ctx = canvas.getContext("2d");
@@ -45,6 +54,18 @@ function aprekins() {
 let vards = document.getElementById("vards").value;
 let num1 = parseFloat(document.getElementById("a").value);
 let num2 = parseInt(document.getElementById("b").value);
+if (vards ==="" || vards ===" " || !vards.match(/^\S[a-zA-Zā-žĀ-Ž\s]+$/)) {
+    alert("Kļūda ievadē!");
+    return;
+  }
+if (isNaN(num1) || isNaN(num2)) {
+  alert("Ievadi skaitli!");
+  return;
+}
+  if (!Number.isInteger(Number(num1)) || !Number.isInteger(Number(num2))) { 
+    alert("Ievadi veselu skaitli");
+    return;
+    }
 let sum = num1 * num2;
 console.log("Tevi sauc " + vards + "Atbilde ir: " + sum);
 document.getElementById("rezultats").innerHTML = "<br>Tevi sauc " + vards + "<br>Atbilde ir: " + sum;
@@ -72,4 +93,3 @@ while (j<=10) {
   console.log(j);
   j++;
 }
-let skaitlis = 
